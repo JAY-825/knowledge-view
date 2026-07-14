@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>git常用指令文档 | 淡水海岸</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="是你的文档吗你就看">
+    
+    <link rel="preload" href="/knowledge-view/assets/css/0.styles.4216891d.css" as="style"><link rel="preload" href="/knowledge-view/assets/js/app.4b762e6d.js" as="script"><link rel="preload" href="/knowledge-view/assets/js/2.a78d1807.js" as="script"><link rel="preload" href="/knowledge-view/assets/js/1.f760c658.js" as="script"><link rel="preload" href="/knowledge-view/assets/js/67.18299c08.js" as="script"><link rel="prefetch" href="/knowledge-view/assets/js/10.314866d2.js"><link rel="prefetch" href="/knowledge-view/assets/js/11.95c27b6f.js"><link rel="prefetch" href="/knowledge-view/assets/js/12.ef891d8c.js"><link rel="prefetch" href="/knowledge-view/assets/js/13.be506711.js"><link rel="prefetch" href="/knowledge-view/assets/js/14.4a91f7dd.js"><link rel="prefetch" href="/knowledge-view/assets/js/15.beb8d158.js"><link rel="prefetch" href="/knowledge-view/assets/js/16.09c1acd7.js"><link rel="prefetch" href="/knowledge-view/assets/js/17.3ba98781.js"><link rel="prefetch" href="/knowledge-view/assets/js/18.93b7cb39.js"><link rel="prefetch" href="/knowledge-view/assets/js/19.f5a785f4.js"><link rel="prefetch" href="/knowledge-view/assets/js/20.dd451d3e.js"><link rel="prefetch" href="/knowledge-view/assets/js/21.20532c35.js"><link rel="prefetch" href="/knowledge-view/assets/js/22.c2717c32.js"><link rel="prefetch" href="/knowledge-view/assets/js/23.7a9b7a0b.js"><link rel="prefetch" href="/knowledge-view/assets/js/24.a20b6858.js"><link rel="prefetch" href="/knowledge-view/assets/js/25.4ef6dd6f.js"><link rel="prefetch" href="/knowledge-view/assets/js/26.c2aef495.js"><link rel="prefetch" href="/knowledge-view/assets/js/27.88ca03a8.js"><link rel="prefetch" href="/knowledge-view/assets/js/28.735817cf.js"><link rel="prefetch" href="/knowledge-view/assets/js/29.c9fe99ac.js"><link rel="prefetch" href="/knowledge-view/assets/js/3.9b080be2.js"><link rel="prefetch" href="/knowledge-view/assets/js/30.1f2466b8.js"><link rel="prefetch" href="/knowledge-view/assets/js/31.48474f85.js"><link rel="prefetch" href="/knowledge-view/assets/js/32.3cda201d.js"><link rel="prefetch" href="/knowledge-view/assets/js/33.79a56953.js"><link rel="prefetch" href="/knowledge-view/assets/js/34.711a5c7b.js"><link rel="prefetch" href="/knowledge-view/assets/js/35.fe81cbe3.js"><link rel="prefetch" href="/knowledge-view/assets/js/36.4dba5108.js"><link rel="prefetch" href="/knowledge-view/assets/js/37.6ed531e7.js"><link rel="prefetch" href="/knowledge-view/assets/js/38.e5522054.js"><link rel="prefetch" href="/knowledge-view/assets/js/39.be28c2cb.js"><link rel="prefetch" href="/knowledge-view/assets/js/4.08432fd7.js"><link rel="prefetch" href="/knowledge-view/assets/js/40.e4f176c9.js"><link rel="prefetch" href="/knowledge-view/assets/js/41.51cd0310.js"><link rel="prefetch" href="/knowledge-view/assets/js/42.c015de15.js"><link rel="prefetch" href="/knowledge-view/assets/js/43.5aee735a.js"><link rel="prefetch" href="/knowledge-view/assets/js/44.191e46fe.js"><link rel="prefetch" href="/knowledge-view/assets/js/45.ffde61be.js"><link rel="prefetch" href="/knowledge-view/assets/js/46.014a0356.js"><link rel="prefetch" href="/knowledge-view/assets/js/47.f0e8a31a.js"><link rel="prefetch" href="/knowledge-view/assets/js/48.94bcf5ab.js"><link rel="prefetch" href="/knowledge-view/assets/js/49.96903860.js"><link rel="prefetch" href="/knowledge-view/assets/js/5.32441ee1.js"><link rel="prefetch" href="/knowledge-view/assets/js/50.77cb4666.js"><link rel="prefetch" href="/knowledge-view/assets/js/51.08ccb40d.js"><link rel="prefetch" href="/knowledge-view/assets/js/52.47a999a6.js"><link rel="prefetch" href="/knowledge-view/assets/js/53.b0aaf635.js"><link rel="prefetch" href="/knowledge-view/assets/js/54.ceb982e8.js"><link rel="prefetch" href="/knowledge-view/assets/js/55.f4518774.js"><link rel="prefetch" href="/knowledge-view/assets/js/56.cedfd9e6.js"><link rel="prefetch" href="/knowledge-view/assets/js/57.c4989cd0.js"><link rel="prefetch" href="/knowledge-view/assets/js/58.f97c2678.js"><link rel="prefetch" href="/knowledge-view/assets/js/59.ad586d08.js"><link rel="prefetch" href="/knowledge-view/assets/js/6.a3f28d06.js"><link rel="prefetch" href="/knowledge-view/assets/js/60.66163f4c.js"><link rel="prefetch" href="/knowledge-view/assets/js/61.7ae00608.js"><link rel="prefetch" href="/knowledge-view/assets/js/62.42dd869f.js"><link rel="prefetch" href="/knowledge-view/assets/js/63.d25ce7e2.js"><link rel="prefetch" href="/knowledge-view/assets/js/64.eb09e73b.js"><link rel="prefetch" href="/knowledge-view/assets/js/65.058a66c8.js"><link rel="prefetch" href="/knowledge-view/assets/js/66.e8460c2a.js"><link rel="prefetch" href="/knowledge-view/assets/js/68.a5de0507.js"><link rel="prefetch" href="/knowledge-view/assets/js/69.fe307f31.js"><link rel="prefetch" href="/knowledge-view/assets/js/7.5fc24c60.js"><link rel="prefetch" href="/knowledge-view/assets/js/70.4bf46e81.js"><link rel="prefetch" href="/knowledge-view/assets/js/71.4dd6054d.js"><link rel="prefetch" href="/knowledge-view/assets/js/72.1fb058b9.js"><link rel="prefetch" href="/knowledge-view/assets/js/73.2c48f092.js"><link rel="prefetch" href="/knowledge-view/assets/js/74.b55f2058.js"><link rel="prefetch" href="/knowledge-view/assets/js/75.43ee80a1.js"><link rel="prefetch" href="/knowledge-view/assets/js/76.09d3e70f.js"><link rel="prefetch" href="/knowledge-view/assets/js/77.b50dc00b.js"><link rel="prefetch" href="/knowledge-view/assets/js/78.c5b4ce8d.js"><link rel="prefetch" href="/knowledge-view/assets/js/79.d7abe78e.js"><link rel="prefetch" href="/knowledge-view/assets/js/80.28999ddf.js"><link rel="prefetch" href="/knowledge-view/assets/js/81.4d92d98b.js"><link rel="prefetch" href="/knowledge-view/assets/js/82.355e49a1.js"><link rel="prefetch" href="/knowledge-view/assets/js/83.62ca8ce1.js"><link rel="prefetch" href="/knowledge-view/assets/js/84.2e298ff2.js"><link rel="prefetch" href="/knowledge-view/assets/js/85.a92743f9.js"><link rel="prefetch" href="/knowledge-view/assets/js/86.cb073bec.js"><link rel="prefetch" href="/knowledge-view/assets/js/87.a8cb8ea2.js"><link rel="prefetch" href="/knowledge-view/assets/js/88.d79784f3.js"><link rel="prefetch" href="/knowledge-view/assets/js/89.4b74a8f5.js"><link rel="prefetch" href="/knowledge-view/assets/js/90.fef5fc2a.js"><link rel="prefetch" href="/knowledge-view/assets/js/91.3106d19d.js"><link rel="prefetch" href="/knowledge-view/assets/js/92.39cea5f1.js"><link rel="prefetch" href="/knowledge-view/assets/js/93.1e8f85ab.js"><link rel="prefetch" href="/knowledge-view/assets/js/vendors~docsearch.283a746b.js">
+    <link rel="stylesheet" href="/knowledge-view/assets/css/0.styles.4216891d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/knowledge-view/" class="home-link router-link-active"><!----> <span class="site-name">淡水海岸</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/knowledge-view/vue2/" class="nav-link">
+  基础指南
+</a></div><div class="nav-item"><a href="/knowledge-view/guide/concact.html" class="nav-link">
+  联系作者
+</a></div><div class="nav-item"><a href="https://github.com/JAY-825/knowledge-gihub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/knowledge-view/vue2/" class="nav-link">
+  基础指南
+</a></div><div class="nav-item"><a href="/knowledge-view/guide/concact.html" class="nav-link">
+  联系作者
+</a></div><div class="nav-item"><a href="https://github.com/JAY-825/knowledge-gihub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue2系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>react系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>TypeScript系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>NodeJs系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Nuxt.js系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>ES6系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>小程序系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>开发笔记</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/knowledge-view/notes/" aria-current="page" class="sidebar-link">开发笔记</a></li><li><a href="/knowledge-view/notes/uni_permission.html" class="sidebar-link">uni-app权限判断</a></li><li><a href="/knowledge-view/notes/base64.html" class="sidebar-link">base64编码解码类</a></li><li><a href="/knowledge-view/notes/MD5.html" class="sidebar-link">MD5加密类</a></li><li><a href="/knowledge-view/notes/Calculation.html" class="sidebar-link">js计算类</a></li><li><a href="/knowledge-view/notes/uni_scan.html" class="sidebar-link">uni-app扫码跳转</a></li><li><a href="/knowledge-view/notes/package.html" class="sidebar-link">package.json文档</a></li><li><a href="/knowledge-view/notes/gitignore.html" class="sidebar-link">.gitignore文档</a></li><li><a href="/knowledge-view/notes/gitword.html" aria-current="page" class="active sidebar-link">git常用指令文档</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/knowledge-view/notes/gitword.html#账号配置与查看" class="sidebar-link">账号配置与查看</a></li><li class="sidebar-sub-header"><a href="/knowledge-view/notes/gitword.html#ssh-密钥生成与查看" class="sidebar-link">SSH 密钥生成与查看</a></li><li class="sidebar-sub-header"><a href="/knowledge-view/notes/gitword.html#远程仓库与克隆" class="sidebar-link">远程仓库与克隆</a></li><li class="sidebar-sub-header"><a href="/knowledge-view/notes/gitword.html#分支操作-本地" class="sidebar-link">分支操作（本地）</a></li><li class="sidebar-sub-header"><a href="/knowledge-view/notes/gitword.html#分支操作-远程" class="sidebar-link">分支操作（远程）</a></li><li class="sidebar-sub-header"><a href="/knowledge-view/notes/gitword.html#提交-查看-日志" class="sidebar-link">提交/查看/日志</a></li><li class="sidebar-sub-header"><a href="/knowledge-view/notes/gitword.html#合并与变基" class="sidebar-link">合并与变基</a></li><li class="sidebar-sub-header"><a href="/knowledge-view/notes/gitword.html#暂存与回滚" class="sidebar-link">暂存与回滚</a></li><li class="sidebar-sub-header"><a href="/knowledge-view/notes/gitword.html#标签-版本标记" class="sidebar-link">标签（版本标记）</a></li><li class="sidebar-sub-header"><a href="/knowledge-view/notes/gitword.html#常用别名-提高效率" class="sidebar-link">常用别名（提高效率）</a></li><li class="sidebar-sub-header"><a href="/knowledge-view/notes/gitword.html#常见场景速查" class="sidebar-link">常见场景速查</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>开发插件推荐系列</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git常用指令文档"><a href="#git常用指令文档" class="header-anchor">#</a> git常用指令文档</h1> <p>本文整理 Git 在日常开发中的高频操作指令，覆盖账号配置与查看、SSH 密钥生成与查看、本地与远程分支操作，以及提交、合并、回滚、标签、别名等实用场景。所有命令在 Windows PowerShell 环境可直接使用（部分 <code>ssh-agent</code> 命令需要以管理员身份运行）。</p> <h2 id="账号配置与查看"><a href="#账号配置与查看" class="header-anchor">#</a> 账号配置与查看</h2> <ul><li>初始化与设置</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># 设置全局用户名与邮箱（影响所有仓库）
+git config --global user.name &quot;你的名字&quot;
+git config --global user.email &quot;you@example.com&quot;
+
+# 设置当前仓库的用户名与邮箱（仅影响当前仓库）
+git config user.name &quot;项目内名字&quot;
+git config user.email &quot;project@example.com&quot;
+
+# 设置默认主分支名称
+git config --global init.defaultBranch main
+
+# Windows 推荐换行符策略（避免 CRLF/Unix 差异）
+git config --global core.autocrlf true
+
+# 配置拉取策略（按需选择）
+# 仅快进
+git config --global pull.ff only
+# 或使用变基
+git config --global pull.rebase true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><ul><li>查看配置</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># 查看当前生效的所有配置
+git config --list
+
+# 查看配置来源（系统/全局/仓库级别）
+git config --list --show-origin
+
+# 查看单项配置
+git config user.name
+git config user.email
+
+# 打开编辑器修改全局配置
+git config --global --edit
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ul><li>凭据管理（Windows 常用）</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># 使用 Git Credential Manager（Windows 默认随 Git 安装）
+git config --global credential.helper manager-core
+
+# 取消凭据助手（按需）
+git config --global --unset credential.helper
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="ssh-密钥生成与查看"><a href="#ssh-密钥生成与查看" class="header-anchor">#</a> SSH 密钥生成与查看</h2> <ul><li>生成密钥</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># 推荐使用 ed25519 算法（更快更安全）
+ssh-keygen -t ed25519 -C &quot;you@example.com&quot;
+# 交互式选择保存路径，通常为：C:\\Users\\&lt;你的用户名&gt;\\.ssh\\id_ed25519
+
+# 备用：RSA 4096 位
+ssh-keygen -t rsa -b 4096 -C &quot;you@example.com&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>启动 ssh-agent 并添加密钥（Windows）</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># 以管理员权限启用并启动服务
+Get-Service ssh-agent | Set-Service -StartupType Automatic
+Start-Service ssh-agent
+
+# 添加私钥（PowerShell 路径写法）
+ssh-add $env:USERPROFILE\.ssh\id_ed25519
+
+# 查看已加载的密钥
+essh-add -l
+# 移除指定密钥
+essh-add -d $env:USERPROFILE\.ssh\id_ed25519
+# 移除全部密钥
+essh-add -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><ul><li>查看与复制公钥</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># 查看公钥内容（PowerShell）
+Get-Content $env:USERPROFILE\.ssh\id_ed25519.pub
+
+# 复制公钥到剪贴板
+Get-Content $env:USERPROFILE\.ssh\id_ed25519.pub | Set-Clipboard
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>测试连接</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># 测试到 GitHub 的 SSH 连接（首次会提示确认）
+ssh -T git@github.com
+
+# GitLab/其他平台同理
+essh -T git@gitlab.com
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>可选：配置 ~/.ssh/config 便捷别名（手动创建）</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519
+  AddKeysToAgent yes
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="远程仓库与克隆"><a href="#远程仓库与克隆" class="header-anchor">#</a> 远程仓库与克隆</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code># 从远程克隆仓库
+git clone git@github.com:user/repo.git
+
+# 初始化本地仓库，并绑定远程
+git init
+git remote add origin git@github.com:user/repo.git
+
+# 查看远程列表与地址
+git remote -v
+
+# 更新远程地址
+git remote set-url origin git@github.com:user/new-repo.git
+
+# 重命名/移除远程
+git remote rename origin upstream
+git remote remove upstream
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="分支操作-本地"><a href="#分支操作-本地" class="header-anchor">#</a> 分支操作（本地）</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code># 查看本地/远程/全部分支
+git branch
+git branch -r
+git branch -a
+
+# 创建并切换分支（推荐 switch）
+git switch -c feature/login
+# 旧用法（仍可用）
+git checkout -b feature/login
+
+# 切换分支
+git switch main
+
+# 重命名当前分支
+git branch -m new-name
+# 重命名其他分支
+git branch -m old-name new-name
+
+# 删除本地分支（未合并需 -D）
+git branch -d feature/login
+git branch -D feature/login
+
+# 查看分支的上游跟踪状态
+git branch -vv
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h2 id="分支操作-远程"><a href="#分支操作-远程" class="header-anchor">#</a> 分支操作（远程）</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code># 推送并建立上游跟踪
+git push -u origin feature/login
+
+# 拉取远程分支并建立本地跟踪
+git fetch origin
+git switch --track origin/feature/login
+# 或：
+git checkout -t origin/feature/login
+
+# 删除远程分支
+git push origin --delete feature/login
+# 等价写法：
+git push origin :feature/login
+
+# 同步远程更改（含清理已删除分支）
+git fetch -p
+# 或显式清理
+git remote prune origin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h2 id="提交-查看-日志"><a href="#提交-查看-日志" class="header-anchor">#</a> 提交/查看/日志</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code># 查看状态
+git status
+
+# 选择性暂存（交互式）
+git add -p
+# 暂存全部改动
+git add .
+
+# 提交
+git commit -m &quot;feat: 登录流程&quot;
+# 修改上一条提交信息/内容（谨慎使用）
+git commit --amend
+
+# 差异对比
+git diff            # 工作区与暂存区
+git diff --staged   # 暂存区与最新提交
+
+# 日志（常用美化别名见下文）
+git log --oneline --graph --decorate --all
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h2 id="合并与变基"><a href="#合并与变基" class="header-anchor">#</a> 合并与变基</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code># 合并分支到当前分支
+git merge feature/login
+# 禁用快进（保留合并节点）
+git merge --no-ff feature/login
+# 压缩合并为一次提交
+git merge --squash feature/login
+
+# 变基到最新主分支（将当前分支提交“搬家”到 main 之上）
+git fetch origin
+git rebase origin/main
+# 交互式变基（重排/压缩提交）
+git rebase -i HEAD~5
+
+# 冲突处理后继续
+git add &lt;files&gt;
+git merge --continue
+# 或变基继续
+git rebase --continue
+# 中止操作
+git merge --abort
+git rebase --abort
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h2 id="暂存与回滚"><a href="#暂存与回滚" class="header-anchor">#</a> 暂存与回滚</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code># 储藏工作区改动（不含未跟踪文件）
+git stash push -m &quot;WIP: 登录表单&quot;
+# 包含未跟踪文件
+git stash push -u -m &quot;WIP: 含新文件&quot;
+
+# 查看/应用/弹出
+git stash list
+git stash apply stash@{0}
+git stash pop stash@{0}
+# 删除某条或全部
+git stash drop stash@{0}
+git stash clear
+
+# 回滚提交（生成反向提交，安全）
+git revert &lt;commit&gt;
+
+# 重置到某提交（谨慎，可能重写历史）
+# 保留改动到暂存区（软重置）
+git reset --soft &lt;commit&gt;
+# 保留改动到工作区（默认混合）
+git reset --mixed &lt;commit&gt;
+# 丢弃改动（硬重置，危险）
+git reset --hard &lt;commit&gt;
+
+# 恢复文件到指定版本（新命令）
+# 丢弃工作区改动
+git restore &lt;path&gt;
+# 将文件从暂存区移除
+git restore --staged &lt;path&gt;
+
+# 清理未跟踪文件/目录（危险）
+git clean -fd
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><h2 id="标签-版本标记"><a href="#标签-版本标记" class="header-anchor">#</a> 标签（版本标记）</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code># 轻量标签
+git tag v1.0.0
+# 附注标签（包含作者/时间/说明）
+git tag -a v1.0.0 -m &quot;release 1.0.0&quot;
+
+# 推送单个或全部标签
+git push origin v1.0.0
+git push origin --tags
+
+# 删除标签（本地/远程）
+git tag -d v1.0.0
+git push origin --delete tag v1.0.0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="常用别名-提高效率"><a href="#常用别名-提高效率" class="header-anchor">#</a> 常用别名（提高效率）</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code># 基础别名
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.st status
+git config --global alias.cm &quot;commit -m&quot;
+
+# 精简图形化日志（推荐）
+git config --global alias.lg &quot;log --graph --pretty=format:'%C(auto)%h%C(reset) - %s %C(dim)%an, %ar%C(reset) %C(auto)%d' --abbrev-commit --date=relative&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="常见场景速查"><a href="#常见场景速查" class="header-anchor">#</a> 常见场景速查</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code># 首次推送并建立上游
+git push -u origin main
+
+# 将本地分支关联到远程已有分支
+git fetch origin
+git branch --set-upstream-to=origin/feature/login feature/login
+# 或：
+git switch --track origin/feature/login
+
+# 更新并同步远程清理
+git fetch -p
+
+# 获取最新主分支并快速同步到当前分支
+git fetch origin &amp;&amp; git merge --ff-only origin/main
+# 或保持线性历史
+git fetch origin &amp;&amp; git rebase origin/main
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">11/25/2025, 5:47:43 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/knowledge-view/notes/gitignore.html" class="prev">
+        .gitignore文档
+      </a></span> <span class="next"><a href="/knowledge-view/codevs/">
+        vscode插件推荐
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/knowledge-view/assets/js/app.4b762e6d.js" defer></script><script src="/knowledge-view/assets/js/2.a78d1807.js" defer></script><script src="/knowledge-view/assets/js/1.f760c658.js" defer></script><script src="/knowledge-view/assets/js/67.18299c08.js" defer></script>
+  </body>
+</html>

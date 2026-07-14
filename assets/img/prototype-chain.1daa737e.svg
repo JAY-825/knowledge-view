@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="380" viewBox="0 0 920 380">
+  <defs>
+    <style>
+      .box { fill: #f7fafc; stroke: #a0aec0; stroke-width: 2; rx: 8; }
+      .title { font: 700 14px/1.2 -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial; fill: #2d3748; }
+      .text { font: 12px/1.2 -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial; fill: #4a5568; }
+      .arrow { stroke: #718096; stroke-width: 2; marker-end: url(#arrowHead); fill: none; }
+      .dashed { stroke-dasharray: 5 4; }
+      .label { font: 12px/1.2 -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial; fill: #2b6cb0; }
+    </style>
+    <marker id="arrowHead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#718096" />
+    </marker>
+  </defs>
+
+  <!-- 实例对象 -->
+  <rect class="box" x="60" y="60" width="160" height="70" />
+  <text class="title" x="80" y="85">实例 obj</text>
+  <text class="text" x="80" y="105">自有属性</text>
+
+  <!-- 隐式原型 -->
+  <rect class="box" x="300" y="60" width="220" height="70" />
+  <text class="title" x="320" y="85">隐式原型 obj.__proto__</text>
+  <text class="text" x="320" y="105">即 [[Prototype]]</text>
+
+  <!-- 显式原型（构造函数的 prototype） -->
+  <rect class="box" x="580" y="60" width="220" height="70" />
+  <text class="title" x="600" y="85">显式原型 Fn.prototype</text>
+  <text class="text" x="600" y="105">共享方法与属性</text>
+
+  <!-- Object.prototype 顶端 -->
+  <rect class="box" x="580" y="180" width="220" height="70" />
+  <text class="title" x="600" y="205">Object.prototype</text>
+  <text class="text" x="600" y="225">原型链顶（再上层为 null）</text>
+
+  <!-- null 终止 -->
+  <text class="title" x="600" y="300">null</text>
+
+  <!-- 构造函数 Fn -->
+  <rect class="box" x="300" y="180" width="220" height="70" />
+  <text class="title" x="320" y="205">构造函数 Fn</text>
+  <text class="text" x="320" y="225">可构造函数</text>
+
+  <!-- Function.prototype -->
+  <rect class="box" x="60" y="180" width="200" height="70" />
+  <text class="title" x="80" y="205">Function.prototype</text>
+  <text class="text" x="80" y="225">函数对象的原型</text>
+
+  <!-- 箭头：实例到隐式原型 -->
+  <path class="arrow" d="M 220 95 L 300 95" />
+  <text class="label" x="230" y="85">obj.__proto__</text>
+
+  <!-- 箭头：隐式原型到显式原型（通常等于 Fn.prototype） -->
+  <path class="arrow" d="M 520 95 L 580 95" />
+  <text class="label" x="525" y="85">=== Fn.prototype</text>
+
+  <!-- 箭头：显式原型到 Object.prototype -->
+  <path class="arrow" d="M 690 130 L 690 180" />
+  <text class="label" x="705" y="160">__proto__</text>
+
+  <!-- 箭头：Object.prototype 到 null -->
+  <path class="arrow" d="M 690 250 L 690 290" />
+
+  <!-- 构造函数原型关系：Fn.__proto__ 到 Function.prototype -->
+  <path class="arrow dashed" d="M 310 215 L 260 215" />
+  <text class="label" x="260" y="205">Fn.__proto__</text>
+
+  <!-- 构造函数的 prototype 指向显式原型对象 -->
+  <path class="arrow dashed" d="M 410 215 L 410 130" />
+  <text class="label" x="420" y="170">Fn.prototype</text>
+
+  <!-- 说明文字 -->
+  <text class="text" x="60" y="340">属性读取顺序：obj → obj.__proto__(= Fn.prototype) → Object.prototype → null</text>
+</svg>
